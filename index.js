@@ -13,7 +13,7 @@ app.post('/chat', async (req, res) => {
 
     try {
         const response = await axios.post('https://api.openai.com/v1/chat/completions', {
-            model: "gpt-3.5-turbo",
+            model: "gpt-3.5-turbo-1106",
             messages: [{ role: "user", content: userPrompt }],
             max_tokens: 150
         }, {
